@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px; 
+            height: auto; 
+        }
+
+        .background-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .button-container {
+            position: absolute;
+            bottom: 2%;
+            width: 96%; /* 設置容器的寬度（稍微大於按鈕總寬度） */
+            left: 2%; /* 設置容器的左邊距 */
+            display: flex;
+            justify-content: space-between; /* 在容器內部分配空間 */
+        }
+
+        .button {
+            width: 48%; /* 每個按鈕的寬度（稍微小於容器寬度的一半） */
+            height: 60px; /* 設置按鈕的高度，根據需要調整 */
+            border: 2px solid transparent; /* 透明邊框 */
+            background-color: rgba(0, 0, 0, 0); /* 完全透明背景 */
+            text-decoration: none;
+            border-radius: 0.5em; /* 使用em單位設置圓角 */
+            transition: background-color 0.3s ease; /* 過渡效果 */
+        }
+
+        .button:hover {
+            background-color: rgba(0, 0, 0, 0.2); /* 懸停時半透明背景 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.pinimg.com/736x/96/93/3d/96933d955f20827f7c6d132a0102211b.jpg" alt="背景圖片" class="background-image">
+        <div class="button-container">
+            <a href="https://www.evo.v588.co/Register?a=13081" class="button" title="立即註冊"></a>
+            <a href="https://lin.ee/42n6YPn" class="button" title="領取優惠"></a>
+        </div>
+    </div>
+</body>
+</html>
